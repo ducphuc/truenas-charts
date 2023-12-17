@@ -13,7 +13,7 @@ extraArgs: []
 image:
   pullPolicy: IfNotPresent
   repository: minio/minio
-  tag: RELEASE.2023-03-13T19-46-17Z
+  tag: RELEASE.2023-12-14T18-51-57Z
 ixChartContext: {}
 logSearchImage:
   pullPolicy: IfNotPresent

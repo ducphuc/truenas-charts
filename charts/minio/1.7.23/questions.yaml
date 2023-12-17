@@ -4,9 +4,9 @@ groups:
   - name: "Workload Configuration"
     description: "Configure workload deployment"
   - name: "Minio Configuration"
-    description: "Configure Minio credentials"
+    description: "Configure Minio services"
   - name: "Storage"
-    description: "Configure Storage for Nextcloud"
+    description: "Configure Storage for Minio"
   - name: "Advanced DNS Settings"
     description: "Configure DNS settings"
   - name: "Resource Limits"
@@ -173,6 +173,7 @@ questions:
       type: int
       $ref:
         - "definitions/certificate"
+      "null": true
 
   - variable: minioDomain
     label: "Minio Domain Name"
@@ -248,7 +249,6 @@ questions:
                       schema:
                         type: hostpath
                         required: true
-                        immutable: true
 
   - variable: extraAppVolumeMounts
     label: "Extra Host Path Volumes"
@@ -316,7 +316,6 @@ questions:
                       schema:
                         type: hostpath
                         required: true
-                        immutable: true
 
         - variable: postgres-backup
           label: Postgres Backup Volume

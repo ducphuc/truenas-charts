@@ -4,12 +4,12 @@
         "supported": true,
         "healthy_error": null,
         "location": "/__w/charts/charts/charts/minio/1.7.23",
-        "last_update": "2023-12-15 15:22:53",
+        "last_update": "2023-12-17 20:28:23",
         "required_features": [
             "normalize/ixVolume",
             "definitions/certificate"
         ],
-        "human_version": "2023-03-13_1.7.23",
+        "human_version": "2023-12-14_1.7.23",
         "version": "1.7.23",
         "chart_metadata": {
             "name": "minio",
@@ -20,7 +20,7 @@
             "type": "application",
             "version": "1.7.23",
             "apiVersion": "v2",
-            "appVersion": "2023-03-13",
+            "appVersion": "2023-12-14",
             "kubeVersion": ">=1.16.0-0",
             "maintainers": [
                 {
@@ -434,8 +434,7 @@
                                                         "label": "Host Path for Minio Data Volume",
                                                         "schema": {
                                                             "type": "hostpath",
-                                                            "required": true,
-                                                            "immutable": true
+                                                            "required": true
                                                         }
                                                     }
                                                 ]
@@ -542,8 +541,7 @@
                                                         "label": "Host Path for Postgres Data Volume",
                                                         "schema": {
                                                             "type": "hostpath",
-                                                            "required": true,
-                                                            "immutable": true
+                                                            "required": true
                                                         }
                                                     }
                                                 ]
